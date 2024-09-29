@@ -1,0 +1,59 @@
+.logo {
+    width: 100px; 
+    height: auto;
+    margin-right: 90px; 
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+.navbar{
+    padding: 1rem;
+}
+.navbar{
+    font-size: 1.6rem;
+}
+.nav-link{
+    font-size: 1.2rem;
+}
+.bg-blue{
+    background-color:#003DA5;
+}
+.hero-section{
+    background: url('wp5034051-desktop-stamford-bridge-wallpapers.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-section h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero-section p{
+    font-size: 1.5rem;
+}
+.btn-blue {
+    background-color: #003DA5;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+}
+.btn-blue:hover{
+    background-color: #003DA5;
+}
+
+.card{
+    border: none;
+    margin-bottom: 2rem;
+}
+
+footer{
+    background-color: #003DA5;
+    color: white
+}
