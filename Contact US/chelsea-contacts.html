@@ -1,125 +1,150 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chelsea website</title>
+    <title>Chelsea Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body{background-color: white;}
-        .logo{
-            width:100%;
-            height: 60px;
-            background-color:white;
+        body {
+            background-color: white;
+        }
+        .logo {
+            background-color: white;
             padding: 10px;
-            text-align:left;
-            
-        }
-        .menu{
-            width:100%;
-            height: 200px;
-            background-color:rgb(4, 4, 134);
-            text-align:center;
-        }
-        .details{
-            width:100%;
-            height: 1200px;
-            background-color:white;
-            padding: 10px;
-            
-        }
-        .subDiv{
-            text-align:center;
-
-            
-        }
-
-        .footer{
-            width:100%;
-            height: 250px;
-            background-color:rgb(4, 4, 134);
-            color:white;
-        }
-        .col1{
             text-align: left;
-
         }
-        .col2{
+        .menu {
+            background-color: rgb(4, 4, 134);
+            color: white;
+            padding: 40px 0;
             text-align: center;
         }
-        .col3{
-            text-align:right;
+    
+        .details {
+            padding: 40px;
         }
+        .details a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .details a:hover {
+            text-decoration: underline;
+            text-decoration-color: yellow; /* Yellow underline on hover */
+            border-bottom: 2px solid yellow; /* Add a yellow line */
+        }
+        .footer {
+            background-color: rgb(4, 4, 134);
+            color: white;
+            padding: 20px 0;
+        }
+        .footer-col {
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: rgb(4, 4, 134);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
         
+        }
+        .button:hover {
+            background-color: darkblue;
+        }
     </style>
 </head>
-    
 <body>
     <div class="logo">
-        <h3 style= color:rgb(9,9,98);> LATEST     WATCH     MEN'S TEAM     WOMEN'S TEAM     TICKETS & HOSPITALITY</h3>
+        <h3 style="color: rgb(9, 9, 98);">LATEST | WATCH | MEN'S TEAM | WOMEN'S TEAM | TICKETS & HOSPITALITY</h3>
     </div>
+
     <div class="menu">
-        <h1 style= color:white;>Contact Us</h1><br>
-        <h3 style= color:white;>Contact Chelsea by email, phone number or post</h3>
-
-    </div>
-
-    < class="details">
-        <a href="Tickets.html">Tickets</a><br><br>
-        <a href="Membership_&_season_tickets.html">membership & season tickets</a><br><br>
-        <a href="Supporters_club.html">Supporters clubs</a><br><br>
-        <a href="Stadium_tours_$_museum.html">Stadium Tours $ museum</a><br><br>
-        <a href="Chelsea_women_FC.html">Chelsea Women FC</a><br><br>
-        <a href="Soccer_schools.html">Soccer Schools</a><br><br>
-        <a href="Website.html">website</a><br><br>
-        <a href="Club_Chelsea_hospitality.html">Club Chelsea hospitality</a><br><br>
-        <a href="Chelsea_Pitch_Owners.html">Chelsea Pitch Owners</a><br><br>
-        <a href="Child_Mascots.html">Child Mascots</a><br><br>
-        <a href="Miscellaneous.html">Miscellaneous</a><br><br>
+        <h1>Contact Us</h1>
+        <h3>Contact Chelsea by email, phone number, or post</h3>
     </div>
     
-        
-        <p><b>If your enquiry has not been answered by a FAQ contact us below</b></p>
-
-        <div class="email"> 
-            <h3>Contact Us : By Email </h3>
-            <p> Choose which department you want to contact and send them an email</p>
-            <a href = "email.html" class="button">Click Here</a><br>
+    <div class="container details">
+        <h3>If your enquiry has not been answered by a FAQ, contact us below:</h3>
+        <div class="row">
+            <div class="col-md-6 text-left">
+                <a href="Tickets.html">Tickets</a>
+                <a href="Membership_&_season_tickets.html">Membership & Season Tickets</a>
+                <a href="Supporters_club.html">Supporters Clubs</a>
+                <a href="Stadium_tours_$_museum.html">Stadium Tours & Museum</a>
+                <a href="Chelsea_women_FC.html">Chelsea Women FC</a>
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="Soccer_schools.html">Soccer Schools</a>
+                <a href="Website.html">Website</a>
+                <a href="Club_Chelsea_hospitality.html">Club Chelsea Hospitality</a>
+                <a href="Chelsea_Pitch_Owners.html">Chelsea Pitch Owners</a>
+                <a href="Child_Mascots.html">Child Mascots</a>
+                <a href="Miscellaneous.html">Miscellaneous</a>
+            </div>
         </div>
 
-        <div class="phone">
-            <h3>Contact Us : By Phone</h3>
-            <p>If you want to speak to the club direct by telephone, find the numbers to use here</p><br>
-            <a href = "phone.html" class="button">Click Here</a><br>
+        <div class="row mt-4">
+            <div class="col text-center">
+                <img src="email picture.webp" alt="Email Icon">
+                <h3>Contact Us: By Email</h3>
+                <p>Choose which department you want to contact and send them an email</p>
+                <a href="email.html" class="button">Click Here</a>
+            </div>
+            <div class="col text-center">
+                <img src="phone picture.webp" alt="Phone Icon">
+                <h3>Contact Us: By Phone</h3>
+                <p>If you want to speak to the club directly by telephone, find the numbers to use here</p>
+                <a href="phone.html" class="button">Click Here</a>
+            </div>
+            <div class="col text-center">
+                <img src="post image.webp" alt="Post Icon">
+                <h3>Contact Us: By Post</h3>
+                <p>You can also send a letter to the club by post, find our address here</p>
+                <a href="post.html" class="button">Click Here</a>
+            </div>
         </div>
 
-        <div class="post">
-            <h3>Contact Us : By Post</h3>
-            <p>You can also send a letter to the clubby post, find our address here</p>
-            <a href = "post.html" class = "button">Click Here</a><br>
-            <h3>Get in Contact</h3>
-            <p>Additional Enquiries:</p>
-            <p>Our community team is really available to provide guidance and assistance. Feel free to opt for either</p>
-            <p>calling or emailing us and our team will reach out to you promptly (international +44 207 386 973)</p>
-
-
-        </div>
-    
+        <h3 class="mt-4">Get in Contact</h3>
+        <p>Additional Enquiries:</p>
+        <p>Our community team is here to provide guidance and assistance. Feel free to opt for either calling or emailing us, and our team will reach out to you promptly (international +44 207 386 973)</p>
     </div>
 
-    <div class="footer">
-        <div class="row Divborder">
-            <div class="col1">
-                <h3> Chelsea Football Club <br> Stamford Bridge <br> Fulham Road <br> London <br> SW6 1HS </h3>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <ul>
+                        <li>Chelsea Football Club</li>
+                        <li>Stamford Bridge</li>
+                        <li>Fulham Road</li>
+                        <li>London</li>
+                        <li>SW6 1HS</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <ul>
+                        <li>About the Club</li>
+                        <li>Contact Us</li>
+                        <li>Frequently Asked Questions</li>
+                        <li>The Shed</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h3>Get unrivaled access to all things Chelsea with the<br> official Chelsea App...</h3>
+                </div>
             </div>
-            <div class= "col2">
-                <h3 text >About the club <br> Contact us <br> Frequently asked questions <br> The Shed</h3>
-            </div>
-            <div class="col3">
-                <h3> Get unrivalled to all things Chelsea with the<br> official chelsea App...</h3>
-            </div>
-    </div>
+            <p class="text-center">&copy; 2022 Chelsea FC. All rights reserved. No part of this site may be reproduced without our written permission.</p>
+        </div>
+    </footer>
 
-
-
-    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
