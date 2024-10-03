@@ -1,78 +1,210 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-            .logo{
-                height: 250px;
-                background-color: #003DA5;
-                color: white;
-            }
-            .BODY{
-                background-image: url(Background.jpg);
-                height: 500PX;
-                color: white;
-                text-align: center;
-                font-size: xx-large;
-                
-
-
-
-            }
-            .other{
-                text-align: center;
-            }
-            .footer{
-                position: relative;
-                bottom: 0;
-                width: 100%;
-                background-color: #003DA5;
-                color: white;
-                height: 50px;
-                text-align: center;
-
-            }
-        </style>
-
-    </head>
-    <body>
-        
-        <div class="logo">
-           
-            <center><button>login</button></center>
-            <h1>CHELSEA FC</h1>
-            <img src="logo.jpeg" width="100px" height="100px">
-            <div class="other">
-                <button><a href="contact.html">Contact</a></button>
-                <button><a href="Gallerys.html">Gallerys</a></button>
-                <button><a href="aboutus.html">About us</a></button>
-                <button><a href="Marketplace.html">Market place</a></button>
-                <button><a href="registration.html">Registration</a></button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #001489; 
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: white;
+        }
+        .navbar-custom .dropdown-menu {
+            background-color: #001489; 
+        }
+        .navbar-custom .dropdown-item {
+            color: white;
+        }
+        .navbar-custom .dropdown-item:hover {
+            background-color: #001489; 
+        }
+        .footer {
+            background-color: rgb(4, 4, 134);
+            color: white;
+            padding: 20px 0;
+        }
+        .footer-col {
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: rgb(4, 4, 134);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Chelsea.webp" alt="Chelsea FC Logo" class="logo" width="50" height="50">
+                Chelsea FC 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Home</a></li>
+                            <li><a class="dropdown-item" href="#">Shop</a></li>
+                            <li><a class="dropdown-item" href="#">Contact us</a></li>
+                            <li><a class="dropdown-item" href="About us.html">About me</a></li>
+                            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="#">Registration page</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            
-
-       </div>
-      
-        
-       
-    
-        <div class="BODY">
-            <h1>Welcome to Chelsea FC</h1>
-            <p>Your one-stop destination for all things Chelsea Football club</p>
-            <a href="registration.html" class="btn btn-primary"> Join Us</a>
-
         </div>
-        
-            
-        </div>
-    
-        <div class="footer">
-            <p>copyright@2024 Chelsea FC. All rights reserved.</p>
+    </nav>
 
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pedro neto.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Embodiment of Excellence: A True Chelsea FC Champion!</p>                    
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="hugging.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Together as One: Celebrating the Spirit of Teamwork at Chelsea FC!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Background.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Embracing Our Legacy: The Heart of Chelsea FC!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="training.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Building Strength and Unity: Chelsea FC Training for Greatness!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        
+    </section><br>
+
+    <section class="video py-5">
+        <div class="container">
+            <h2>Watch the Latest Chelsea Match Highlights</h2>
+            <div id="chelseaVideoCarousel" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: auto;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video controls class="d-block w-100" style="height: 400px;">
+                            <source src="Goals of the month.mp4" type="video/mp4">
+                           
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls class="d-block w-100" style="height: 400px;">
+                            <source src="Up for Rampant Chelsea  Crystal Palace v Chelsea Highlights  Barclays WSL.mp4" type="video/mp4">
+                           
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls class="d-block w-100" style="height: 400px;">
+                            <source src="Up for Rampant Chelsea  Crystal Palace v Chelsea Highlights  Barclays WSL.mp4" type="video/mp4">
+                            
+                        </video>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#chelseaVideoCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#chelseaVideoCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section><br><br>
+
+    <section>
+        <h2>Latest News</h2>
+        <div id="latestNewsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#latestNewsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="chelsea women 2.jpg" class="d-block w-100" alt="Chelsea Women's Team">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="https://www.chelseafc.com/en/news/category/womens-team" class="btn btn-primary">Chelsea Women Team</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#latestNewsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#latestNewsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
     
-        
-    </body>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <ul>
+                        <li>Chelsea Football Club</li>
+                        <li>Stamford Bridge</li>
+                        <li>Fulham Road</li>
+                        <li>London</li>
+                        <li>SW6 1HS</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <ul>
+                        <li>About the Club</li>
+                        <li>Contact Us</li>
+                        <li>Frequently Asked Questions</li>
+                        <li>The Shed</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-col"></div>
+            </div>
+            <p class="text-center">&copy; 2022 Chelsea FC. All rights reserved. No part of this site may be reproduced without our written permission.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-    
