@@ -32,3 +32,33 @@ footer {
 .navbar-nav .nav-link:hover {
     color: #d4af37;  
 }
+navbar-custom {
+    background-color:  #001489; 
+}
+
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white;
+}
+
+
+.navbar-custom .dropdown-menu {
+    background-color: #001489; 
+}
+
+.navbar-custom .dropdown-item {
+    color: white;
+}
+
+.navbar-custom .dropdown-item:hover {
+    background-color: #001489; 
+}
+.footer {
+    background-color: rgb(4, 4, 134);
+    color: white;
+    padding: 1px 0;
+  }
+  .footer-col {
+    margin-bottom: 5px;
+  }
