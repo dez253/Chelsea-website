@@ -1,104 +1,120 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us by phone</title>
+    <title>Contact Us by Phone</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body{background-color: white;}
-            .logo{
-                width:100%;
-                height: 60px;
-                background-color:white;
-                padding: 10px;
-                text-align:left;
-            
+        body {
+            background-color: white;
         }
-            .menu{
-                width:100%;
-                height: 200px;
-                background-color:rgb(4, 4, 134);
-                text-align:center;
+        .logo {
+            background-color: white;
+            padding: 10px;
+            text-align: left;
         }
-        .content{
-            width:100%;
-            height:1300px;
-            background-color:white;
-            padding:10px;
+        .menu {
+            background-color: rgb(4, 4, 134);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
         }
-        .footer{
-            width:100%;
-            height: 250px;
-            background-color:rgb(4, 4, 134);
-            text-align:left;
-            color:white;
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            background-color: rgb(4, 4, 134);
+            color: white;
+            padding: 20px 0;
+        }
+        .text-align-center {
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="logo">
-        <h3 style= color:rgb(9,9,98);> LATEST     WATCH     MEN'S TEAM     WOMEN'S TEAM     TICKETS & HOSPITALITY</h3>
+        <h3 style="color: rgb(9, 9, 98);">LATEST | WATCH | MEN'S TEAM | WOMEN'S TEAM | TICKETS & HOSPITALITY</h3>
     </div>
+
     <div class="menu">
-        <h1 style= color:white;>Contact Us - By Phone</h1>
+        <h1>Contact Us - By Phone</h1>
     </div>
-    <div class="content">
-        <h4>General Inquiries</h4>
-        <p>UK: 0371 811 1955 (International: +44 207 386 9373)</p><br>
-        <h4>Ticket & Membership</h4>
-        <p>UK: 0371 811 1905 (International: +44 207 835 6000)</p><br>
-        <h4>Disabled Supporters Office</h4>
-        <p>UK: 0371 811 1955 (International: +44 207 915 1950)</p><br>
-        <h4>Hospitality</h4>
-        <p>UK: 0371 811 1955 (International: +44 207 386 9373)</p><br>
-        <h4>Hotel Reservations</h4>
-        <p>UK:020 7565 1414 (International: +44 207 7565 1414)</p><br>
-        <h4>Hotel Front Desk</h4>
-        <p>UK: 020 3479 3565 (International: +44 207 479 3565)</p><br>
-        <h4>Meetings & Events</h4>
-        <p>UK: 0371 811 1955 (International: +44 1932 596 193)</p><br>
-        <h4>Soccer Schools</h4>
-        <p>UK: 01932 596193 (International: +44 1932 596 193)</p><br>
-        <h4>Stadium Tours & Museum</h4>
-        <p>UK: 0371 811 1955 (International: +44 207 386 9373)</p><br><br>
-        <p><b>If your enquiry has not been answered by a FAQ contact us below...</b></p>
 
-        <div class="email"> 
-            <h3>Contact Us : By Email </h3>
-            <p> Choose which department you want to contact and send them an email</p>
-            <a href = "email.html" class="button">Click Here</a><br>
+    <div class="container content">
+        <div class="contact-info">
+            <h4>General Inquiries</h4>
+            <p>UK: 0371 811 1955 (International: +44 207 386 9373)</p>
+            <h4>Ticket & Membership</h4>
+            <p>UK: 0371 811 1905 (International: +44 207 835 6000)</p>
+            <h4>Disabled Supporters Office</h4>
+            <p>UK: 0371 811 1955 (International: +44 207 915 1950)</p>
+            <h4>Hospitality</h4>
+            <p>UK: 0371 811 1955 (International: +44 207 386 9373)</p>
+            <h4>Hotel Reservations</h4>
+            <p>UK: 020 7565 1414 (International: +44 207 7565 1414)</p>
+            <h4>Hotel Front Desk</h4>
+            <p>UK: 020 3479 3565 (International: +44 207 479 3565)</p>
+            <h4>Meetings & Events</h4>
+            <p>UK: 0371 811 1955 (International: +44 1932 596 193)</p>
+            <h4>Soccer Schools</h4>
+            <p>UK: 01932 596193 (International: +44 1932 596 193)</p>
+            <h4>Stadium Tours & Museum</h4>
+            <p>UK: 0371 811 1955 (International: +44 207 386 9373)</p>
         </div>
 
-        <div class="phone">
-            <h3>Contact Us : By Phone</h3>
-            <p>If you want to speak to the club direct by telephone, find the numbers to use here</p><br>
-            <a href = "phone.html" class="button">Click Here</a><br>
+        <div class="row text-align-center mt-4">
+            <div class="col-md-4">
+                <img src="email picture.webp" alt="Email Icon" class="img-fluid my-3">
+                <h3>Contact Us: By Email</h3>
+                <p>Choose which department you want to contact and send them an email</p>
+                <a href="email.html" class="btn btn-primary">Click Here</a>
+            </div>
+
+            <div class="col-md-4">
+                <img src="phone picture.webp" alt="Phone Icon" class="img-fluid my-3">
+                <h3>Contact Us: By Phone</h3>
+                <p>If you want to speak to the club directly by telephone, find the numbers to use here</p>
+                <a href="phone.html" class="btn btn-primary">Click Here</a>
+            </div>
+
+            <div class="col-md-4">
+                <img src="post image.webp" alt="Post Icon" class="img-fluid my-3">
+                <h3>Contact Us: By Post</h3>
+                <p>You can also send a letter to the club by post; find our address here</p>
+                <a href="post.html" class="btn btn-primary">Click Here</a>
+            </div>
         </div>
 
-        <div class="post">
-            <h3>Contact Us : By Post</h3>
-            <p>You can also send a letter to the clubby post, find our address here</p>
-            <a href = "post.html" class = "button">Click Here</a><br>
+        <div class="text-align-center mt-4">
             <h3>Get in Contact</h3>
             <p>Additional Enquiries:</p>
-            <p>Our community team is really available to provide guidance and assistance. Feel free to opt for either</p>
-            <p>calling or emailing us and our team will reach out to you promptly (international +44 207 386 973)</p>
-
-            <div class="footer">
-                <div class="row Divborder">
-                    <div class="col"><h3> Chelsea Football Club <br> Stamford Bridge <br> Fulham Road <br> London <br> SW6 1HS </h3>
-                    <div class="col"><h3>About the club <br> Contact us <br> Frequently asked questions <br> The Shed</h3>
-                    <div class="col"></div><h3> Get unrivalled to all things Chelsea with the<br> official chelsea App...</h3>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-        
-        
-        
-
+            <p>Our community team is available to provide guidance and assistance. Feel free to opt for either calling or emailing us, and our team will reach out to you promptly (international +44 207 386 973)</p>
+        </div>
     </div>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Chelsea Football Club<br>Stamford Bridge<br>Fulham Road<br>London<br>SW6 1HS</p>
+                </div>
+                <div class="col-md-4">
+                    <p>About the Club<br><a href="#">Contact Us</a><br><a href="#">Frequently Asked Questions</a><br><a href="#">The Shed</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p>Get Unrivaled Access</p>
+                    <p>To all things Chelsea with the official Chelsea App...</p>
+                </div>
+            </div>
+            <p class="text-center mt-4">&copy; 2022 Chelsea FC. All rights reserved. No part of this site may be reproduced without our written permission.</p>
+            <a href="Chelsea-contacts.html" class="button">Back to Contact Us</a>
+        </div>
+    </footer>
     
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
