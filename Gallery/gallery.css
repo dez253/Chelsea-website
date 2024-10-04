@@ -44,3 +44,44 @@ body {
     padding: 100px;
   }
   
+.navbar-custom {
+  background-color:  #001489; 
+}
+
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: white;
+}
+
+
+.navbar-custom .dropdown-menu {
+  background-color: #001489; 
+}
+
+.navbar-custom .dropdown-item {
+  color: white;
+}
+
+.navbar-custom .dropdown-item:hover {
+  background-color: #001489; 
+}
+.footer {
+  background-color: rgb(4, 4, 134);
+  color: white;
+  padding: 1px 0;
+}
+.footer-col {
+  margin-bottom: 5px;
+}
+.button {
+  background-color: rgb(4, 4, 134);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: darkblue;
+}
