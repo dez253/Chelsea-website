@@ -7,8 +7,12 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: white;
-        }
+            background:url(img1.jpg);
+            background-position: center;
+            background-size: cover;
+            backdrop-filter: blur(18px);
+            font-family: poppins, sans-serif;        }
+
         .logo {
             background-color: white;
             padding: 10px;
@@ -42,6 +46,17 @@
         }
         .text-align-center {
             text-align: center;
+        }
+        h3{
+            color: white;
+            font-size: 20px;
+        }
+        h5{
+            color:white;
+        }
+        p{
+            color: rgb(180, 180, 245)
+
         }
     </style>
 </head>
@@ -77,76 +92,54 @@
             <button type="submit" class="button">SEND MY MESSAGE</button>
         </form>
 
-        <h3 class="text-align-center mt-4">If your enquiry has not been answered by a FAQ contact us below...</h3>
-        <div class="container content">
-            <p>To contact the club by email, please select a department from the dropdown menu and fill in the form.</p>
-            <p>Please request the <a href="Questions.html" class="button">Frequently Asked Questions</a> before contacting us as your enquiry might have already been answered there.</p>
-            <p>Please keep correspondence polite and courteous at all times, even if you wish to make a complaint. Our staff will do their best to help with your enquiry but they will be unable to respond to messages that contain swearing or are abusive. All calls and emails are logged.</p>
         
-            <h3>Contact a Department</h3>
-            <form action="">
-                <select name="department" class="form-control mb-3">
-                    <option value="">Please select department</option>
-                    
-                </select>
-                <textarea name="message" class="form-control mb-3" placeholder="Message" rows="4"></textarea>
-                <input type="text" name="firstName" class="form-control mb-3" placeholder="First Name">
-                <input type="text" name="lastName" class="form-control mb-3" placeholder="Last Name">
-                <input type="email" name="email" class="form-control mb-3" placeholder="Your Email Address">
-                <input type="text" name="country" class="form-control mb-3" placeholder="Country/Region">
-                <input type="date" name="dob" class="form-control mb-3" placeholder="Date of Birth">
-                
-                <p>Please let us know if you would like to be contacted by Chelsea FC and its group companies with news and promotional information about Chelsea FC, its <a href="Official_sponsors_and_partners.html" class="button">Official sponsors and partners</a> and their products and services, where we have the relevant contact details... By Email</p>
-                <p>Please read our <a href="Privacy_policy.html" class="button">Privacy Policy</a> to learn more about Chelsea FC and its group companies, how we use your information and how to change your mind about receiving marketing from us.</p>
-        
-                <button type="submit" class="button">SEND MY MESSAGE</button>
-            </form>
-        
-            <h3 class="text-align-center mt-4">If your enquiry has not been answered by a FAQ contact us below...</h3>
-            <div class="row text-align-center my-4">
-                <div class="col-md text-align-center">
-                    <img src="email picture.webp" alt="Email Icon" class="img-fluid">
-                    <h3>Contact Us: By Email</h3>
-                    <p>Choose which department you want to contact and send them an email</p>
-                    <a href="email.html" class="button">Click Here</a>
-                </div>
-                <div class="col-md text-align-center">
-                    <img src="phone picture.webp" alt="Phone Icon" class="img-fluid">
-                    <h3>Contact Us: By Phone</h3>
-                    <p>If you want to speak to the club directly by telephone, find the numbers to use here</p>
-                    <a href="phone.html" class="button">Click Here</a>
-                </div>
-                <div class="col-md text-align-center">
-                    <img src="post image.webp" alt="Post Icon" class="img-fluid">
-                    <h3>Contact Us: By Post</h3>
-                    <p>You can also send a letter to the club by post; find our address here</p>
-                    <a href="post.html" class="button">Click Here</a>
-                </div>
+        <div class="row text-align-center mt-4">
+            <div class="col-md-4">
+                <img src="email picture.webp" alt="Email Icon" class="img-fluid my-3">
+                <h3>Contact Us: By Email</h3>
+                <p>Choose which department you want to contact and send them an email</p>
+                <a href="email.html" class="btn btn-primary">Click Here</a>
             </div>
-        
+
+            <div class="col-md-4">
+                <img src="phone picture.webp" alt="Phone Icon" class="img-fluid my-3">
+                <h3>Contact Us: By Phone</h3>
+                <p>If you want to speak to the club directly by telephone, find the numbers to use here</p>
+                <a href="phone.html" class="btn btn-primary">Click Here</a>
+            </div>
+
+            <div class="col-md-4">
+                <img src="post image.webp" alt="Post Icon" class="img-fluid my-3">
+                <h3>Contact Us: By Post</h3>
+                <p>You can also send a letter to the club by post; find our address here</p>
+                <a href="post.html" class="btn btn-primary">Click Here</a>
+            </div>
+        </div>
+
             <h3 class="text-align-center mt-4">Get in Contact</h3>
             <p class="text-align-center">Additional Enquiries:</p>
             <p class="text-align-center">Our community team is available to provide guidance and assistance. Feel free to opt for either calling or emailing us, and our team will reach out to you promptly (international +44 207 386 973)</p>
         </div>
         
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <p>Chelsea Football Club<br>Stamford Bridge<br>Fulham Road<br>London<br>SW6 1HS</p>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer-col">
+                        <h5>Chelsea Football Club<br>Stamford Bridge<br>Fulham Road<br>London<br>SW6 1HS</h5>
+                    </div>
+                    <div class="col-md-4 footer-col">
+                        <h5>About the Club<br>Contact Us<br>Frequently Asked Questions<br>The Shed<br></h5>
+                    </div>
+                    <div class="col-md-4 footer-col">
+                        <h5>Get unrivaled access to all things Chelsea with the<br> official Chelsea App...</h5>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <p>About the Club<br>Contact Us<br>Frequently Asked Questions<br>The Shed</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Get unrivaled access to all things Chelsea with the<br> official Chelsea App...</h4>
-                </div>
+                <h5 class="text-center">&copy; 2024 Chelsea FC. All rights reserved. No part of this site may be reproduced without our written permission.</h5>
             </div>
-            <p class="text-center">&copy; 2022 Chelsea FC. All rights reserved. No part of this site may be reproduced without our written permission.</p>
-            <a href="Chelsea-contacts.html" class="button">Back to Contact Us</a>
-        </div>
-    </footer>
+            <a href="Chelsea-contacts.html">Back to contact us</a>
+                    
+        </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
