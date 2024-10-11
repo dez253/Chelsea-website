@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: white;
-        }
+            background:url(img1.jpg);
+            background-position: center;
+            background-size: cover;
+            backdrop-filter: blur(18px);
+            font-family: poppins, sans-serif;        }
+
         .logo {
             background-color: white;
             padding: 10px;
@@ -32,8 +37,7 @@
         }
         .details a:hover {
             text-decoration: underline;
-            text-decoration-color: yellow;
-            border-bottom: 2px solid yellow; 
+            text-decoration-color: yellow; 
         }
         .footer {
             background-color: rgb(4, 4, 134);
@@ -55,6 +59,17 @@
         .button:hover {
             background-color: darkblue;
         }
+
+        h3{
+            color: white;
+            font-size: 20px;
+        }
+        h5{
+            color:white;
+        }
+        p{
+            color: rgb(180, 180, 245)
+        }
     </style>
 </head>
 <body>
@@ -63,6 +78,7 @@
     </div>
 
     <div class="menu">
+        <img src="Chelsea.webp" alt="Chelsea FC Logo" class="logo" width="30" height="30">
         <h1>Contact Us</h1>
         <h3>Contact Chelsea by email, phone number, or post</h3>
     </div>
@@ -87,24 +103,26 @@
             </div>
         </div>
 
-        <div class="row mt-4">
-            <div class="col text-center">
-                <img src="email picture.webp" alt="Email Icon">
+        <div class="row text-align-center mt-4">
+            <div class="col-md-4">
+                <img src="email picture.webp" alt="Email Icon" class="img-fluid my-3">
                 <h3>Contact Us: By Email</h3>
                 <p>Choose which department you want to contact and send them an email</p>
-                <a href="email.html" class="button">Click Here</a>
+                <a href="email.html" class="btn btn-primary">Click Here</a>
             </div>
-            <div class="col text-center">
-                <img src="phone picture.webp" alt="Phone Icon">
+
+            <div class="col-md-4">
+                <img src="phone picture.webp" alt="Phone Icon" class="img-fluid my-3">
                 <h3>Contact Us: By Phone</h3>
                 <p>If you want to speak to the club directly by telephone, find the numbers to use here</p>
-                <a href="phone.html" class="button">Click Here</a>
+                <a href="phone.html" class="btn btn-primary">Click Here</a>
             </div>
-            <div class="col text-center">
-                <img src="post image.webp" alt="Post Icon">
+
+            <div class="col-md-4">
+                <img src="post image.webp" alt="Post Icon" class="img-fluid my-3">
                 <h3>Contact Us: By Post</h3>
-                <p>You can also send a letter to the club by post, find our address here</p>
-                <a href="post.html" class="button">Click Here</a>
+                <p>You can also send a letter to the club by post; find our address here</p>
+                <a href="post.html" class="btn btn-primary">Click Here</a>
             </div>
         </div>
 
@@ -117,16 +135,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 footer-col">
-                    <p>Chelsea Football Club<br>Stamford Bridge<br>Fulham Road<br>London<br>SW6 1HS</p>
+                    <h5>Chelsea Football Club<br>Stamford Bridge<br>Fulham Road<br>London<br>SW6 1HS</h5>
                 </div>
                 <div class="col-md-4 footer-col">
-                    <p>About the Club<br>Contact Us<br>Frequently Asked Questions<br>The Shed<br>
+                    <h5>About the Club<br>Contact Us<br>Frequently Asked Questions<br>The Shed<br></h5>
                 </div>
                 <div class="col-md-4 footer-col">
-                    <h4>Get unrivaled access to all things Chelsea with the<br> official Chelsea App...</h4>
+                    <h5>Get unrivaled access to all things Chelsea with the<br> official Chelsea App...</h5>
                 </div>
             </div>
-            <p class="text-center">&copy; 2022 Chelsea FC. All rights reserved. No part of this site may be reproduced without our written permission.</p>
+            <h5 class="text-center">&copy; 2024 Chelsea FC. All rights reserved. No part of this site may be reproduced without our written permission.</h5>
         </div>
     </footer>
 
