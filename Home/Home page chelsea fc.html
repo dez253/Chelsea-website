@@ -4,198 +4,284 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
         .navbar-custom {
-            background-color: #001489; 
+            background-color: #003DA5; /* Chelsea blue */
         }
         .navbar-custom .navbar-brand,
         .navbar-custom .nav-link {
             color: white;
         }
-        .navbar-custom .dropdown-menu {
-            background-color: #001489; 
-        }
-        .navbar-custom .dropdown-item {
-            color: white;
-        }
-        .navbar-custom .dropdown-item:hover {
-            background-color: #001489; 
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
         }
         .footer {
-            background-color: rgb(4, 4, 134);
+            background-color: #003DA5; /* Chelsea blue */
             color: white;
-            padding: 20px 0;
+            padding: 40px 0;
         }
         .footer-col {
             margin-bottom: 20px;
         }
         .button {
-            background-color: rgb(4, 4, 134);
-            color: white;
-            padding: 10px 20px;
+            background-color: #F8C70D; /* Gold */
+            color: #003DA5; /* Chelsea blue */
+            padding: 12px 24px;
             border: none;
-            border-radius: 5px;
+            border-radius: 25px; /* Rounded edges */
             text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            font-weight: 700;
         }
         .button:hover {
-            background-color: darkblue;
+            background-color: #d6b600; /* Darker gold */
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
-        h5{
-            color: white;
+        h2, h5 {
+            color: #003DA5; /* Chelsea blue */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin: 40px 0 20px;
+            font-weight: 700;
+        }
+        .social-icons a {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            margin: 0 10px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            color: #003DA5; /* Chelsea blue */
+            background-color: white;
+            transition: background-color 0.5s, transform 0.5s;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .social-icons a:hover {
+            background-color: #F8C70D; /* Gold */
+            transform: scale(1.1);
+        }
+        .media-container img, .media-container video {
+            border-radius: 10px; /* Consistent rounding */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .carousel-item img {
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #003DA5;">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="Chelsea.webp" alt="Chelsea FC Logo" class="logo" width="50" height="50">
-                Chelsea FC 
+                <span class="ms-2">Chelsea FC</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registration Page</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Menu
+                            More
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Home</a></li>
-                            <li><a class="dropdown-item" href="#">Shop</a></li>
-                            <li><a class="dropdown-item" href="#">Contact us</a></li>
-                            <li><a class="dropdown-item" href="About us.html">About me</a></li>
-                            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
-                            <li><a class="dropdown-item" href="#">Registration page</a></li>
+                            <li><a class="dropdown-item" href="#">Fan Zone</a></li>
+                            <li><a class="dropdown-item" href="#">Tickets</a></li>
+                            <li><a class="dropdown-item" href="#">News</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
 
-    <section>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="pedro neto.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>Embodiment of Excellence: A True Chelsea FC Champion!</p>                    
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="hugging.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>Together as One: Celebrating the Spirit of Teamwork at Chelsea FC!</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Background.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>Embracing Our Legacy: The Heart of Chelsea FC!</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="training.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>Building Strength and Unity: Chelsea FC Training for Greatness!</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
-    </section><br>
-
-    <section class="video py-5">
-        <div class="container">
-            <h2>Watch the Latest Chelsea Match Highlights</h2>
-            <div id="chelseaVideoCarousel" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: auto;">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <video controls class="d-block w-100" style="height: 400px;">
-                            <source src="Goals of the month.mp4" type="video/mp4">
-                           
-                        </video>
-                    </div>
-                    <div class="carousel-item">
-                        <video controls class="d-block w-100" style="height: 400px;">
-                            <source src="Up for Rampant Chelsea  Crystal Palace v Chelsea Highlights  Barclays WSL.mp4" type="video/mp4">
-                           
-                        </video>
-                    </div>
-                    <div class="carousel-item">
-                        <video controls class="d-block w-100" style="height: 400px;">
-                            <source src="Up for Rampant Chelsea  Crystal Palace v Chelsea Highlights  Barclays WSL.mp4" type="video/mp4">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="pedro neto.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Embodiment of Excellence: A True Chelsea FC Champion!</p>                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="hugging.jpg" class="d-block w-100" alt="Celebrating Teamwork" style="height: 500px; object-fit: cover;">
+                
+                        <div class="carousel-caption d-none d-md-block">
+    
+                            <p> Together as One: Celebrating the Spirit of Teamwork at Chelsea FC!</p>
                             
-                        </video>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#chelseaVideoCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#chelseaVideoCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </div>
+            <div class="carousel-item">
+                <img src="Background.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Embracing Our Legacy: The Heart of Chelsea FC!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="training.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Building Strength and Unity: Chelsea FC Training for Greatness!</p>
+                </div>
             </div>
         </div>
-    </section><br><br>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    
 
-    <section>
-        <h2>Latest News</h2>
-        <div id="latestNewsCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#latestNewsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="chelsea women 2.jpg" class="d-block w-100" alt="Chelsea Women's Team">
-                    <div class="carousel-caption d-none d-md-block">
-                        <a href="https://www.chelseafc.com/en/news/category/womens-team" class="btn btn-primary">Chelsea Women Team</a>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Watch the Latest Chelsea Match Highlights</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <video controls class="card-img-top" style="border-radius: 10px;">
+                            <source src="Goals of the month.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">Goals of the Month</h5>
+                            <p class="card-text">Catch the best goals from the latest matches!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <video controls class="card-img-top" style="border-radius: 10px;">
+                            <source src="Up for Rampant Chelsea  Crystal Palace v Chelsea Highlights  Barclays WSL.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">Chelsea vs Crystal Palace Highlights</h5>
+                            <p class="card-text">Highlights from the exciting match against Crystal Palace.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <video controls class="card-img-top" style="border-radius: 10px;">
+                            <source src="Gotham FC 13 Chelsea Women  EXTENDED HIGHLIGHTS  Chelsea USA Tour.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">More Match Highlights</h5>
+                            <p class="card-text">Catch up on more thrilling highlights from Chelsea matches!</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#latestNewsCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#latestNewsCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </section>
+    
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Latest News</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="chelsea women 2.jpg" class="card-img-top" alt="Chelsea Women's Team" style="border-radius: 10px; height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Chelsea Women's Team</h5>
+                            <p class="card-text">Stay updated with the latest news and highlights from Chelsea Women's Team.</p>
+                            <a href="https://www.chelseafc.com/en/news/category/womens-team" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="jadon-sancho-before-west-ham-21092024.webp" class="card-img-top" alt="Latest Match News" style="border-radius: 10px; height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Latest Match Recap</h5>
+                            <p class="card-text">Get all the details on Chelsea's latest match and player performances.</p>
+                            <a href="https://chelsea.news/2024/10/sancho-dropped-neto-shots/" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="nich.jpg" class="card-img-top" alt="Upcoming Events" style="border-radius: 10px; height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Upcoming Events</h5>
+                            <p class="card-text">Don't miss out on the upcoming matches and events. Stay informed!</p>
+                            <a href="https://www.newsnow.co.uk/h/Sport/Football/Premier+League/Chelsea/Forwards/Nicolas+Jackson" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 footer-col">
-                    <h5>Chelsea Football Club<br>Stamford Bridge<br>Fulham Road<br>London<br>SW6 1HS</h5>
+                    <p>Chelsea Football Club<br>Stamford Bridge<br>Fulham Road<br>London<br>SW6 1HS</p>
                 </div>
                 <div class="col-md-4 footer-col">
-                    <h5>About the Club<br>Contact Us<br>Frequently Asked Questions<br>The Shed...</h5>
+                    <p>About the Club<br>Contact Us<br>Frequently Asked Questions<br>The Shed</p>
                 </div>
                 <div class="col-md-4 footer-col">
-                    <h5>Get unrivaled access to all things Chelsea with the<br>Official Chelsea App...</h5>
+                    <p>Get unrivaled access to all things Chelsea with the<br>official Chelsea App...</p>
                 </div>
-                <div>
-                    <h5 class="text-center">&copy; 2022 Chelsea FC. All rights reserved. No part of this site may be reproduced without our written permission.</p>
-                </div>
+            </div>
+            <div class="social-icons text-center mt-4">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <h5 class="text-center">&copy; 2024 Chelsea FC. All rights reserved. No part of this site may be reproduced without our written permission.</h5>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
